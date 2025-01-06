@@ -1,6 +1,6 @@
-<h1>Khóa học của tôi</h1>
-<a href='courses/create' class='btn btn-primary'>Thêm khóa học</a>
-<a href='me/trash/courses' class='btn btn-primary'>Thùng rác {{countCoursesDelted}}</a>
+<h1>Khóa học đã xóa</h1>
+
+<a href='/' class='btn btn-primary'>trở lại</a>
 <div class='row'>
     {{#each courses}}
         <div class='col-md-4'>
@@ -13,8 +13,8 @@
                         <h5 class='card-title'>{{this.name}}</h5>
                     </a>
                     <p class='card-text'>{{this.description}}</p>
-                    <a href='/courses/{{this._id}}/delete' class='btn btn-primary'>Xóa</a>
-                    <a href='/courses/{{this._id}}/edit' class='btn btn-primary'>Sửa</a>
+                    <a href='/courses/{{this._id}}/restore' class='btn btn-primary'>Khôi phục</a>
+                    <a href='/courses/{{this._id}}/deleteForce' class='btn btn-primary'>xóa vĩnh viễn</a>
                 </div>
             </div>
         </div>
